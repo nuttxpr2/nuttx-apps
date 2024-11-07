@@ -262,7 +262,6 @@ jobs:
     runs-on: windows-latest
     strategy:
       fail-fast: false
-      max-parallel: 1
       matrix:
         boards: ${{ fromJSON(needs.msys2-Arch.outputs.selected_builds) }}
 
